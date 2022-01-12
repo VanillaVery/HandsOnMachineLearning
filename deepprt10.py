@@ -52,9 +52,9 @@ expon_lr=ExponentialLearningRate(factor=1.005)
 # run_logdir=get_run_logdir()
 
 
-checkpoint_cb=keras.callbacks.ModelCheckpoint(r"C:\Users\윤유진\OneDrive - 데이터마케팅코리아 (Datamarketingkorea)\문서\my_keras_model.h5",save_best_only=True)
+checkpoint_cb=keras.callbacks.ModelCheckpoint(r"어쩌구\문서\my_keras_model.h5",save_best_only=True)
 early_stopping_cb=keras.callbacks.EarlyStopping(patience=10,restore_best_weights=True)
-tensorboard_cb=keras.callbacks.TensorBoard(r'C:\Users\윤유진\OneDrive - 데이터마케팅코리아 (Datamarketingkorea)\문서\tensor_log')
+tensorboard_cb=keras.callbacks.TensorBoard(r'어쩌구\문서\tensor_log')
 
 history=model.fit(X_train,y_train,
                   # batch_size=10,(128,256,512)
